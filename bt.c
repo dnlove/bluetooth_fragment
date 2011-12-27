@@ -44,8 +44,6 @@
 
 #define DEBUG 1
 #define STANDALONETEST 1
-   //for stand-alone test 
-   //uncomment this main function and bind and listen in recv_ccn_over_bt
 int main() {
 
 	int i;
