@@ -1,0 +1,7 @@
+This is Bluetooth sample program.  It shows you how to send data between two devices as well as how to do packet fragmentations.  I originally implemented this for CCN, but I hope it'll be useful for anyone doing Bluetooth programming.
+
+Instructions:
+
+1) Go to {send_ccn_over_bt_rec} in {bt.c} and change the host and guest address accordingly.  For example, on machine A, set destination address to B, and vice versa.
+2) Compile: gcc -o bt bt.c -lbluetooth
+
