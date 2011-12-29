@@ -14,8 +14,11 @@
  *
  * Author: Duy Nguyen <duy@soe.ucsc.edu>
  *
- * This is an implementation of Bluetooth over CCN
- * Based on Ethernet over CCN by UCLA 
+ * This is the modular API for CCN over Bluetooth
+ * Based on CCN over Ethernet work done by UCLA 
+ * Since this is only an API, you'll need to modify the ccnd daemon accordingly
+ * This API can also be used as a stand-alone test for bluetooth devices
+
  */
 
 
@@ -54,7 +57,7 @@ int recv_ccn_over_bt(const char * bt_dev, char * ccnx_pkt, int socket);
 struct ext_bt_header{
 	char dest_mac[18];	
 	char src_mac[18];
-	unsigned char  type;		// 4 bits
+	unsigned char  type;       // 4 bits
 	uint16_t protocol;         // 2 bytes
 	
 	// bluetooth fragmentation & checksum

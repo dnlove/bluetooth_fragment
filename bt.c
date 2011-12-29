@@ -14,8 +14,10 @@
  *
  * Author: Duy Nguyen <duy@soe.ucsc.edu>
  *
- * This is an implementation of Bluetooth over CCN
- * Based on Ethernet over CCN work done by UCLA 
+ * This is the modular API for CCN over Bluetooth
+ * Based on CCN over Ethernet work done by UCLA 
+ * Since this is only an API, you'll need to modify the ccnd daemon accordingly
+ * This API can also be used as a stand-alone test for bluetooth devices
  */
 
 
